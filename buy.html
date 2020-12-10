@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy Product</title>
+	<style >
+		
+		.topnav {
+  overflow: hidden;
+  background-color: lightBlue;
+}
+
+.topnav  {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  margin-top: 6px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  width:500px;
+}
+
+button{
+    float: right;
+  padding: 6px;
+  margin-top: 6px;
+  margin-right: 16px;
+  border: none;
+}
+button{
+    float: center;
+  padding: 6px;
+  margin-top: 6px;
+  margin-right: 16px;
+  border: none;
+}
+  h1{
+      color:BLUE;
+  }
+  h2{
+    color:RED;
+    overflow: hidden;
+  background-color:Yellow ;
+  }
+  	form {
+				border: 5px solid #f2f2f2;
+			height: 400px;
+                 width: 40%;}
+		input[type=text],[type=text],[type=text],[type=text],[type=text],[type=text]{
+			  width: 100%;
+             padding: 14px 22px;
+             margin: 8px 0;
+             display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+		} 
+		.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+	</style>
+</head>
+<body>
+<h1><center><b>MOBILE SHOPPING SITE</b></center></h1>
+<marquee><h2><b>Due to covid-19 delivery sevices are slow but we are try to provide you best</b></h2></marquee>
+<br>
+<div class="topnav">
+<input type="text" placeholder="Search for items..">
+<a href ="account.html"
+    ><button type="submit">Cart Items</button></a>
+<a href ="login.html"
+    ><button type="submit">Login</button></a>
+<a href ="account.html"
+    ><button type="submit">New User</button></a>
+
+
+</div>
+<hr>
+<div class="row">
+  <div class="column">
+
+</div>
+
+<div class="column">
+
+<table align="right">
+	<tr>
+    <th><B>PRICE DETAILS</B</th>
+    	<th> </th>
+
+  </tr>
+  <tr>
+    <th>Price(1 Item)</th>
+    <th>₹7990</th>
+  </tr>
+  <tr>
+    <td>Delivery Charges</td>
+    <td>Free</td>
+  </tr>
+   <tr>
+    <td>Total Payable</td>
+    <td>₹8000</td>
+  </tr>
+  <tr>
+    <td><a href="orderplaced.html"><button type="submit">Place Order</button></a></td>
+    <th> </th>
+    
+  </tr>
+
+	</table>
+	
+
+</div>
+</div>
+
+<div class="row">
+  <div class="column">
+   <b>ENTER SHIPPING DETAILS<b>
+	<form>
+		<label for="fname"><b>Full Name</b></label><br>
+<input type="text" placeholder="Enter Full Name" name="fname"><br>
+<label for="lname"><b>Address</b></label><br>
+<input type="text" placeholder="Enter your address" name="addr">	<br>	
+<label for="lname"><b>Landmark </b></label><br>
+<input type="text" placeholder="Enter Landmark" name="lname"><br>
+<label for="fname"><b>Email</b></label><br>
+<input type="text" placeholder="Enter your Email" name="email"><br>
+	
+<label for="fname"><b>Mobile No.</b></label><br>
+<input type="text" placeholder="Enter your mobile number" name="mobn"><br>
+
+<B>Address Type</B><br>
+<label class="container">Home
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Office
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+ <button type="submit"></button>
+		
+</form>
+ </div>
+
+  <div class="column">
+
+</body>
+</html>

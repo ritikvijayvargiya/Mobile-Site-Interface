@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>Mobile Website Login Page</title>
+	<style>
+		body {
+			font-family: Arial;
+		}
+
+		form {
+			border: 5px solid #f2f2f2;
+			height: 380px;
+			width: 40%;
+			border: black;
+			border-width: solid 2px;
+		}
+
+		input[type=text],
+		input[type=password] {
+			width: 100%;
+			padding: 14px 22px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		button {
+			background-color: ORANGE;
+			color: WHITE;
+			padding: 15px 20px;
+			margin: 8px 0;
+			border: none;
+			width: 100%;
+		}
+
+
+		.container {
+			margin-top: 30px;
+			padding: 6px;
+		}
+
+		span.psw {
+			display: block;
+			float: none;
+		}
+
+		span.wer {
+			display: block;
+			float: none;
+		}
+
+		h1 {
+			color: BLUE;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		<center><b>MOBILE SHOPPING SITE</b></center>
+	</h1>
+	<h3>
+		<center><b>LOGIN PAGE</b></center>
+	</h3>
+	<center>
+		<div class="formr">
+		<form action="#" onsubmit="return validation()"  >
+			<div class="form-group">
+				<label for="uname"><b>Username</b></label>
+				<input id="uname" type="text" placeholder="Enter your username" name="uname" required>
+				<span id="username"></span>
+			</div>
+			<div class="form-group">
+				<label for="psw"><b>Password</b></label>
+				<input id="pws" type="password" placeholder="Enter password" name="psw" required>
+				<span id="password"></span>
+		</div>
+				<button type=submit>Login</button>
+
+				<div class="form-group">
+				<input id="checkk" type="checkbox" unchecked="unchecked">Remember me
+				<span id="check"></span>
+				</div>
+				<div class="container" style="background-color: #f2f2f2">
+			     <span class="psw"><a href="#"> Forgot Password?</a></span>
+					<br><br>
+					<span class="wer"><a href="account.html"> Create an account</a></span>
+		</form>
+		</div>
+	</center>
+	<script src="login.js"></script>
+
+</body>
+
+</html>

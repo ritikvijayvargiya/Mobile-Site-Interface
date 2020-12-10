@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create an account</title>
+	<style >
+		body{font-family: Arial;
+			
+			background-image: url("bg.jpg") ;
+			image-resolution: 100%;
+
+		}
+	
+		table {
+			border: 2px solid #f1f1f1;
+			width: 800px;
+            border-color: lightgray;
+			margin-top: -30px;
+			border-color: black;
+			background-color : lightblue;
+		}
+		input[type=text],input[type=text],input[type=text],input[type=text],input[type=text],input[type=date],input[type=password],input[type=password]{
+			  width: 100%;
+             padding: 14px 22px;
+             margin: 8px auto;
+			 margin-right: 80px;
+             display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+		} 
+		button{
+			background-color: ORANGE;
+			color: WHITE;
+			font-size: large;
+			padding: 15px 20px;
+			text-c
+			margin: 8px 0;
+			border: none;
+            width: 20%;
+
+		}
+	
+		h1{
+			color:blue;
+		}
+		
+
+	</style>
+</head>
+<body>
+<h1><center><b>MOBILE SHOPPING SITE</b></center></h1>
+<h3><center><b>SIGN UP</b></center></h3>
+
+<table align="center">
+
+	<tr>
+		<td><label for="fname"><b>First Name</b></label></td>
+		<td>
+		<input id="fname" type="text" placeholder="Enter First Name" name="fname">
+	</td>
+    </tr>
+       <tr>
+
+		<td><label for="lname"><b>Last Name </b></label></td>
+			<td>
+		<input id="lname" type="text" placeholder="Enter Last Name" name="lname"></td></tr>
+		<tr>
+			<td>
+		<label for="email"><b>Email</b></label><br></td>
+		<td>
+		<input id="email" type="text" placeholder="Enter your Email" name="email"></td></tr>
+		<tr>
+			<td>
+		<label for="addr"><b>Address</b></label><br></td>
+		<td>
+		<input id="addr" type="text" placeholder="Enter your address" name="addr"></td></tr>
+		<tr>
+			<td>
+		<label for="fname"><b>Mobile No.</b></label></td>
+			<td>
+		<input id="mobn" type="text" placeholder="Enter your mobile number" name="mobn"></td></tr>
+		<tr>
+			<td>
+	    <label for="birthday"><b>Date Of Birth</b></label></td>
+	    <td>
+        <input type="date" id="birthday" name="birthday"></td></tr>
+        <tr>
+        	<td>
+        	<label for="pass"><b>Password</b></label></td>
+        		<td>
+		<input id="pass" type="password" placeholder="Enter Last Name" name="pass"></td></tr>>
+		<tr>
+			<td>
+		<label for="cpass"><b>Confirm Password</b></label></td>
+		<td>
+		<input id="cpass" type="password" placeholder="Confirm Password" name="cpass"></td>
+	</tr>
+	<tr>
+		<td>
+		<input id="check" type="checkbox" unchecked="checked">I agree the terms and conditions.</td></tr>
+		
+			
+		
+</table>
+
+<center>
+<a href ="login.html"
+		onclick="alert('Account Created Successfully');";>
+		<button id="acc" type="submit">Create Account</button></a></center>
+		<script src="account.js"></script>
+
+</body>
+</html>
